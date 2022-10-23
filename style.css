@@ -45,12 +45,19 @@ html {
 .main .content {
     height: 100vh;
     width: 98vw;
-    padding-top: 0px;
+    padding-top: 20px;
     margin: 0px;
 }
 
+.main h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 800;
+    color: #39e69d;
+    padding-top: 10px;
+}
+
 #bottomspace {
-    height: 5vh;
+    height: 10vh;
 }
 
 #section_two .content, #section_four .content {
@@ -116,10 +123,16 @@ html {
     animation-delay: 0.5s;
 }
 
+.main h1 {
+    text-align: center;
+    text-shadow: 5px 5px 7px black;
+}
+
 .icon {
     border-radius: 30px;
     width: min-content;
     background-color: rgb(17, 19, 21);
+    box-shadow: 10px 10px 20px black;
 }
 
 .icon svg {
@@ -141,7 +154,7 @@ html {
         font-size: 121px;
     }
 
-    #landing h2 {
+    #landing h2, .main h1 {
         font-size: 50px
     }
 
@@ -162,7 +175,7 @@ html {
         font-size: 100px;
     }
 
-    #landing h2 {
+    #landing h2, .main h1  {
         font-size: 50px
     }
 
@@ -182,7 +195,7 @@ html {
         font-size: 90px;
     }
 
-    #landing h2 {
+    #landing h2, .main h1  {
         font-size: 50px
     }
 
@@ -203,7 +216,7 @@ html {
         font-size: 77px;
     }
 
-    #landing h2 {
+    #landing h2, .main h1  {
         font-size: 40px
     }
 
@@ -230,7 +243,7 @@ html {
         font-size: 60px;
     }
 
-    #landing h2 {
+    #landing h2, .main h1  {
         font-size: 35px
     }
 
@@ -251,7 +264,7 @@ html {
         font-size: 85px;
     }
 
-    #landing h2 {
+    #landing h2, .main h1  {
         font-size: 30px
     }
 
@@ -272,7 +285,7 @@ html {
         font-size: 70px;
     }
 
-    #landing h2 {
+    #landing h2, .main h1  {
         font-size: 25px
     }
 
