@@ -116,6 +116,19 @@ html {
     animation-delay: 0.5s;
 }
 
+.icon {
+    border-radius: 30px;
+    width: min-content;
+    background-color: rgb(17, 19, 21);
+}
+
+.icon svg {
+    padding: 10px;
+    color: #39e69d;
+    height: 90px;
+    width: 90px;
+}
+
 @media screen and (min-width: 1201px) {
     #landing {
         height: 70vh;
