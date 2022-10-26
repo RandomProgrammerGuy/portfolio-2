@@ -191,6 +191,18 @@ a :hover {
     background-color: #c69ae6;
 }
 
+#facebook :hover {
+    background-color: #3c87e8;
+}
+
+#linkedin :hover {
+    background-color: #3c53e8;
+}
+
+#behance :hover {
+    background-color: #2a53db;
+}
+
 .socials {
     width: max-content;
 }
