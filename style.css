@@ -18,6 +18,9 @@ section {
     background-size: cover;
 }
 
+.menu {
+}
+
 .landing h1, h2 {
     font-family: 'Manrope', sans-serif;
     text-shadow: #d7d7d7 10px 10px 10px;
@@ -83,7 +86,7 @@ section {
     }
 
     .landing h1 {
-        font-size: 140px;
+        font-size: 125px;
     }
 
     .landing h2 {
