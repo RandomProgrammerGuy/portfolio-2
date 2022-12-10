@@ -1,148 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
 
-body {
-    background-color: black;
-}
-
-body {
+body, .hero, html, ul{
     margin: 0%;
+    padding: 0%;
 }
 
-h1, h2, p {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    padding-left: 1.5vw;
-    padding-right: 1.5vw;
-    text-align: center;
-}
-
-.container {
+.hero {
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #2B3A55 0%, #212C42 25%, #171E30 51%, #1E243B 100%);  
+    animation: AnimateBG 20s ease infinite;
+    width: 100vw;
     height: 100vh;
+    position: absolute;
 }
 
-h1, h2, p {
-    font-family: 'Manrope', sans-serif;
+.image {
+    background-image: url(img/portrait.jpg);
+    width: 25vw;
+    height: 25vw;
+    border: 1vw solid #fda7a7;
+    border-radius: 30% 70% 44% 56% / 30% 47% 53% 70%;
+    background-size: 25vw;
+    margin-left: 70vw;
 }
 
-h2, p {
-    color: white;
+@keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+h2, h3, a {
+    font-family: 'Raleway', sans-serif;
 }
 
-h1 {
-    font-weight: 800;
-    background: linear-gradient(to right, #ff416c, #ff4b2b);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h1, h2, h3 {
+    margin-left: 10px;
+    margin-bottom: 0%;
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    margin-top: 0%;
 }
 
 h2 {
-    font-weight: 600;
+    margin-top: -10vh;
 }
 
-p {
-    font-weight: 100;
+h1, a {
+    color: #fda7a7;
 }
 
-img {
-    aspect-ratio: 32 / 9;
-    max-width: 100%;
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
 }
 
-@media screen and (min-width: 1901px) {
+h2 {
+    font-weight: 400;
+}
+
+h2, h3 {
+    color: #E8C4C4;
+}
+
+h3 {
+    font-weight: 200;
+}
+
+@media screen and (min-width: 601px) {
     h1 {
-        font-size: 7em;
+        font-size: 12vw;
     }
 
     h2 {
-        font-size: 4em;
+        font-size: 6vw;
     }
 
-    p {
-        font-size: 3em;
+    h3 {
+        font-size: 4vw;
     }
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 600px) {
     h1 {
-        font-size: 6em;
+        font-size: 24vw;
     }
 
     h2 {
-        font-size: 3.5em;
+        font-size: 8vw;
     }
 
-    p {
-        font-size: 2.5em;
-    }
-}
-
-@media screen and (max-width: 1600px) {
-    h1 {
-        font-size: 5em;
-    }
-
-    h2 {
-        font-size: 3em;
-    }
-
-    p {
-        font-size: 2em;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    h1 {
-        font-size: 3.8em;
-    }
-
-    h2 {
-        font-size: 2.5em;
-    }
-
-    p {
-        font-size: 1.9em;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    h1 {
-        font-size: 3em;
-    }
-    
-    h2 {
-        font-size: 2.5em;
-    }
-
-    p {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    h1 {
-        font-size: 4em;
-    }
-
-    h2 {
-        font-size: 3em;
-    }
-
-    p {
-        font-size: 1.4em;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    h1 {
-        font-size: 3.5em;
-    }
-
-    h2 {
-        font-size: 2.5em;
-    }
-
-    p {
-        font-size: 1.2em;
+    h3 {
+        font-size: 8vw;
     }
 }
