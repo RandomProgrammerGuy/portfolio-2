@@ -7,9 +7,7 @@ body, .hero, html, ul{
 
 .hero {
     padding-top: 2vh;
-    background-size: 300% 300%;
-    background-image: linear-gradient(-45deg, #2B3A55 0%, #212C42 25%, #171E30 51%, #1E243B 100%);  
-    animation: AnimateBG 20s ease infinite;
+    background-color: #FFF0F0;
     width: 100vw;
     height: 98vh;
     position: absolute;
@@ -17,16 +15,19 @@ body, .hero, html, ul{
 
 .image {
     background-image: url(img/portrait.jpg);
-    border: 1vw solid #fda7a7;
+    border: 1vw solid #712E3C;
     border-radius: 30% 70% 44% 56% / 30% 47% 53% 70%;
     margin-top: 6vh;
+    transition: 0.5s ease-in-out;
 }
 
-@keyframes AnimateBG { 
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-  }
+.image:hover {
+    box-shadow: black 0px 5px 20px;
+}
+
+h1:hover, h2:hover, h3:hover {
+    text-shadow: black 0px 3px 5px;
+}
 
 h2, h3, a {
     font-family: 'Raleway', sans-serif;
@@ -36,6 +37,7 @@ h1, h2, h3, a {
     margin-left: 2vw;
     margin-bottom: 0%;
     text-transform: uppercase;
+    transition: 0.5s ease-in-out;
 }
 
 h1, h3 {
@@ -43,7 +45,7 @@ h1, h3 {
 }
 
 h1, a {
-    color: #fda7a7;
+    color: #541833;
 }
 
 a {
@@ -61,7 +63,7 @@ a::before {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #E8C4C4;
+    background-color: #712E3C;
     transition: 0.5s ease-out;
 }
 
@@ -72,7 +74,7 @@ a:hover::before {
 }
 
 a:hover {
-    color: #E8C4C4;
+    color: #9f4156;
 }
 
 h1 {
@@ -86,7 +88,7 @@ h2 {
 }
 
 h2, h3 {
-    color: #E8C4C4;
+    color: #712E3C;
 }
 
 h3 {
@@ -117,6 +119,12 @@ h3 {
         height: 25vw;
         background-size: 25vw;
     }
+
+    .image:hover {
+        width: 26vw;
+        height: 26vw;
+        background-size: 26vw;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -139,6 +147,12 @@ h3 {
 
     .image {
         margin-left: 50vw;
+        width: 45vw;
+        height: 45vw;
+        background-size: 45vw;
+    }
+
+    .image:hover {
         width: 45vw;
         height: 45vw;
         background-size: 45vw;
