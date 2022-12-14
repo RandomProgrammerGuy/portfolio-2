@@ -31,7 +31,7 @@ body, .hero, html, ul{
     border-radius: 30% 70% 44% 56% / 30% 47% 53% 70%;
     margin-top: 6vh;
     transition: 0.5s ease-in-out;
-    box-shadow: rgb(157, 157, 157) 0px 5px 20px;
+    box-shadow: rgb(157, 157, 157) 0px -5px 20px;
 }
 
 .grid {
@@ -71,6 +71,31 @@ body, .hero, html, ul{
 
 .icon {
     margin-bottom: 0;
+}
+
+.split-text {
+    background-color: #f1e3e3;
+    overflow: hidden;
+}
+
+.split-text span {
+    display: inline-block;
+    animation: slideup 2s ease-in-out forwards;
+    animation-delay: -1s;
+}
+
+.second-animation span {
+    animation-duration: 3s;
+}
+
+@keyframes slideup {
+    0%, 50% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 h1:hover, h2:hover, h3:hover {
