@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
 
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' -25,
+  'opsz' 48
+}
+
+body {
+    background-color: #f1e3e3;
+}
+
 body, .hero, html, ul{
     margin: 0%;
     padding: 0%;
@@ -7,10 +19,10 @@ body, .hero, html, ul{
 
 .hero {
     padding-top: 2vh;
-    background-color: #FFF0F0;
+    background-color: #f1e3e3;
     width: 100vw;
     height: 98vh;
-    position: absolute;
+    position: relative;
 }
 
 .image {
@@ -19,17 +31,53 @@ body, .hero, html, ul{
     border-radius: 30% 70% 44% 56% / 30% 47% 53% 70%;
     margin-top: 6vh;
     transition: 0.5s ease-in-out;
+    box-shadow: rgb(157, 157, 157) 0px 5px 20px;
 }
 
-.image:hover {
-    box-shadow: black 0px 5px 20px;
+.grid {
+    height: 94vh;
+    width: 94vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-color: #f1e3e3;
+}
+
+.grid-items {
+    display: grid;
+}
+
+.card {
+    margin-top: 2vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: #dac0c0;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
+    color: #541833;
+}
+
+.card:hover {
+    background-color: #541833;
+    box-shadow: rgb(157, 157, 157) 0px 5px 20px;
+    color: #f1e3e3;
+}
+
+.card:hover p, .card:hover span  {
+    text-shadow: black 0px 2px 5px;
+    transition: 0s;
+}
+
+.icon {
+    margin-bottom: 0;
 }
 
 h1:hover, h2:hover, h3:hover {
-    text-shadow: black 0px 3px 5px;
+    text-shadow: rgb(157, 157, 157) 0px 3px 5px;
 }
 
-h2, h3, a {
+h2, h3, p, a {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -38,6 +86,14 @@ h1, h2, h3, a {
     margin-bottom: 0%;
     text-transform: uppercase;
     transition: 0.5s ease-in-out;
+}
+
+p {
+    margin-top: 0;
+    font-weight: 200;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+    text-align: center;
 }
 
 h1, h3 {
@@ -63,7 +119,7 @@ a::before {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #712E3C;
+    background-color: #541833;
     transition: 0.5s ease-out;
 }
 
@@ -71,6 +127,7 @@ a:hover::before {
     width: 100%;
     left: 0;
     right: auto;
+    background-color: #9f4156;
 }
 
 a:hover {
@@ -113,6 +170,20 @@ h3 {
         font-size: 2vw;
     }
 
+    p {
+        font-size: 3vw;
+    }
+
+    .grid-items {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .icon {
+        font-size: 10vw !important;
+        margin-left: 9.65vw;
+        margin-top: 7vh;
+    }
+
     .image {
         margin-left: 70vw;
         width: 25vw;
@@ -121,9 +192,13 @@ h3 {
     }
 
     .image:hover {
-        width: 26vw;
-        height: 26vw;
+        width: 25.5vw;
+        height: 25.5vw;
         background-size: 26vw;
+    }
+
+    .card {
+        height: 45vh;
     }
 }
 
@@ -145,6 +220,20 @@ h3 {
         font-size: 4vw;
     }
 
+    p {
+        font-size: 10vw;
+    }
+
+    .grid-items {
+        grid-template-columns: 1fr;
+    }
+
+    .icon {
+        font-size: 40vw !important;
+        margin-left: 27vw;
+        margin-top: 25vh;
+    }
+
     .image {
         margin-left: 50vw;
         width: 45vw;
@@ -153,8 +242,12 @@ h3 {
     }
 
     .image:hover {
-        width: 45vw;
-        height: 45vw;
-        background-size: 45vw;
+        width: 46vw;
+        height: 46vw;
+        background-size: 46vw;
+    }
+
+    .card {
+        height: 90vh;
     }
 }
