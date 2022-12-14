@@ -31,7 +31,10 @@ body, .hero, html, ul{
     border-radius: 30% 70% 44% 56% / 30% 47% 53% 70%;
     margin-top: 6vh;
     transition: 0.5s ease-in-out;
+    opacity: 0%;
     box-shadow: rgb(157, 157, 157) 0px -5px 20px;
+    animation: fadein 0.5s ease-in forwards;
+    animation-delay: 1s;
 }
 
 .grid {
@@ -130,11 +133,15 @@ h1, a {
 }
 
 a {
+    animation: fadein 0.5s ease-in;
     padding-top: 20px;
     position: relative;
     text-decoration: none;
     letter-spacing: 3px;
     padding-bottom: 10px;
+    opacity: 0%;
+    animation: fadein 0.5s ease-in-out forwards;
+    animation-delay: 1.5s;
 }
 
 a::before {
@@ -167,6 +174,17 @@ h1 {
 
 h2 {
     font-weight: 400;
+    animation: fadein 0.5s ease-in;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 h2, h3 {
