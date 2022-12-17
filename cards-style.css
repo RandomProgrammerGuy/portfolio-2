@@ -1,1 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
+
+body, html {
+    margin: 0%;
+}
+
+h1, p, a {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, a {
+    text-transform: uppercase;
+    color: #541833;
+}
+
+h1, p {
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+h1 {
+    overflow: hidden;
+}
+
+h1 span {
+    display: inline-block;
+    animation: slideup 2s ease-in-out forwards;
+    animation-delay: -1s;
+}
+
+p {
+    color: rgb(30, 30, 34);
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadein 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+a {
+    margin-top: 3vh;
+    margin-left: 3vw;
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    opacity: 0%;
+    animation: fadein 0.5s ease-in-out forwards;
+    animation-delay: 1s;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes slideup {
+    0%, 50% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #541833;
+    transition: 0.5s ease-out;
+}
+
+a:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+    background-color: #9f4156;
+}
+
+a:hover {
+    color: #9f4156;
+}
+
+p {
+    text-align: justify;
+}
+
+.container {
+    margin: 0%;
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+}
+
+.txt {
+    background-color: #f1e3e3;
+}
+
+.portrait-bg {
+    background-image: url(/img/portrait-2.jpg);
+}
+
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    .abt {
+        margin-top: 15vh;
+    }
+
+    p {
+        font-size: 1.9vw;
+    }
+
+    a {
+        font-size: 2vw;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1.25fr;
+    }
+
+    .portrait-bg {
+        background-size: 60vw;
+        background-position: -10vw;
+    }
+
+    .txt {
+        border-left: 10px solid #541833;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 10vw;
+        margin-top: 5vh;
+    }
+
+    p {
+        font-size: 3.5vw;
+    }
+
+    a {
+        font-size: 3vw;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .portrait-bg {
+        background-size: 100vw;
+        background-position: -0px;
+    }
+
+    .txt {
+        border-top: 10px solid #541833;
+    }
+}
