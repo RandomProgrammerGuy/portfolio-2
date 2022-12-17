@@ -107,7 +107,6 @@ body, .hero, html, ul{
 }
 
 .nostyle::before {
-    position: ;
     height: auto;
     background-color: #541833;
     transition: none;
